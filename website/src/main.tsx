@@ -38,7 +38,7 @@ import "./styles.css";
 import type { Experiment, Prediction, Metric } from "./types";
 
 const BASE = import.meta.env.BASE_URL;
-const REPO = "https://github.com/Soumilshahh/smartenergy-ml";
+const REPO = "https://github.com/Soumilshahh/smartenergy_ML";
 const initialParams = new URLSearchParams(location.search);
 const n = (v: number, d = 1) =>
   v.toLocaleString("en-US", {
@@ -1582,7 +1582,7 @@ function App() {
                 <section>
                   <h2>Reproduce the investigation</h2>
                   <pre tabIndex={0}>
-                    git clone {REPO}.git{"\n"}cd smartenergy-ml{"\n"}python -m
+                    git clone {REPO}.git{"\n"}cd smartenergy_ML{"\n"}python -m
                     venv .venv{"\n"}# Windows PowerShell{"\n"}
                     .\.venv\Scripts\Activate.ps1{"\n"}pip install -r
                     requirements.txt{"\n"}python -m src.run_pipeline --overwrite
@@ -1695,7 +1695,7 @@ function App() {
                   Soumil Shah (24110354) · ES 335 Machine Learning · Individual
                   project.{" "}
                   <a
-                    href={REPO + "/blob/main/docs/AI_DISCLOSURE.md"}
+                    href={REPO + "/blob/master/docs/AI_DISCLOSURE.md"}
                     target="_blank"
                     rel="noreferrer"
                   >

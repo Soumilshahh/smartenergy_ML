@@ -8,7 +8,7 @@ export default defineConfig({
   retries: 0,
   outputDir: path.join(os.tmpdir(), "smartenergy-playwright-results"),
   use: {
-    baseURL: process.env.LIVE_URL || "http://127.0.0.1:4173/smartenergy-ml/",
+    baseURL: process.env.LIVE_URL || "http://127.0.0.1:4173/smartenergy_ML/",
     browserName: "chromium",
     viewport: { width: 1536, height: 1024 },
     reducedMotion: "reduce",
@@ -18,7 +18,7 @@ export default defineConfig({
     : {
         command:
           "node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4173 --strictPort",
-        url: "http://127.0.0.1:4173/smartenergy-ml/",
+        url: "http://127.0.0.1:4173/smartenergy_ML/",
         reuseExistingServer: !process.env.CI,
       },
   reporter: "list",

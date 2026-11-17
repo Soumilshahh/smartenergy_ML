@@ -46,8 +46,8 @@ Airport weather fields are excluded because UCI describes hourly interpolation, 
 ## Reproduce (Python 3.12, CPU)
 
 ```powershell
-git clone https://github.com/Soumilshahh/smartenergy-ml.git
-cd smartenergy-ml
+git clone https://github.com/Soumilshahh/smartenergy_ML.git
+cd smartenergy_ML
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
@@ -64,7 +64,7 @@ On Linux/macOS activate with `source .venv/bin/activate`. The overwrite flag is 
 cd website
 npm ci
 npm run dev
-# open http://127.0.0.1:5173/smartenergy-ml/
+# open http://127.0.0.1:5173/smartenergy_ML/
 npm run build
 npx playwright install chromium
 npm run test:e2e
@@ -72,7 +72,7 @@ npm run test:e2e
 
 If PowerShell resolves a broken global npm shim, run `& 'C:\Program Files\nodejs\npm.cmd'` in place of `npm`. This host required that workaround; it is not a project dependency.
 
-The production base is `/smartenergy-ml/`. GitHub Actions checks Python artifacts, TypeScript, the production build and browser interactions before publishing GitHub Pages. It does not retune or rerun final model selection.
+The production base is `/smartenergy_ML/`. GitHub Actions builds the static website from the committed research artifacts and publishes it to GitHub Pages. Deployment does not run tests, download the raw dataset, train models or rerun model selection.
 
 ## Project structure
 
