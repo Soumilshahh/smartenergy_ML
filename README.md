@@ -39,7 +39,7 @@ Official UCI dataset: 19,735 rows, 29 columns, 2016-01-11 17:00:00 through 2016-
 | validation | 3911 | 2016-04-03 07:30:00 | 2016-04-30 11:10:00 | 2016-04-30 12:10:00 |
 | test | 3917 | 2016-04-30 12:20:00 | 2016-05-27 17:00:00 | 2016-05-27 18:00:00 |
 
-Six origins are purged before each boundary. Training-only expanding cross-validation has three folds and a gap of six. Transformations are fitted inside each sklearn pipeline. Validation MAE chooses the model. All hyperparameters and the primary 55-feature set are frozen before a single final test-scoring stage; fixed candidates are refitted on 15,662 pre-test origins for transparent comparison. See [methodology](docs/METHODOLOGY.md).
+Six origins are purged before each boundary. Training-only expanding cross-validation has three folds and a gap of six. Transformations are fitted inside each sklearn pipeline. Validation MAE chooses the model. All hyperparameters and the primary 55-feature set are frozen before a single final test-scoring stage; fixed candidates are refitted on 15,662 pre-test origins for transparent comparison.
 
 Airport weather fields are excluded because UCI describes hourly interpolation, which could use future endpoints. rv1/rv2 random controls and lights are excluded. Household ten-minute sensor averages are assumed available at interval end. Dataset timestamps lack timezone offsets and are displayed unchanged.
 
@@ -84,7 +84,7 @@ The production base is `/smartenergy_ML/`. GitHub Actions builds the static webs
 
 ## Limits and credits
 
-One household, limited seasons, unknown occupancy and sensor release timing limit external validity. The selected method did not beat persistence on test. See [limitations](docs/LIMITATIONS.md)
+One household, limited seasons, unknown occupancy and sensor release timing limit external validity. The selected method did not beat persistence on test.
 
 
 - Dataset: Candanedo, L. (2017), [Appliances Energy Prediction, UCI](https://doi.org/10.24432/C5VC8G), CC BY 4.0.
