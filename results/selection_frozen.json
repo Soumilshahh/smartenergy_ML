@@ -1,0 +1,47 @@
+{
+  "selected_model": "Gradient boosting",
+  "selected_ml": "Gradient boosting",
+  "feature_protocol": "All history + time + household sensors (predeclared primary)",
+  "best_parameters": {
+    "Ridge": {
+      "ridge__alpha": 10000
+    },
+    "Random forest": {
+      "randomforestregressor__max_depth": null,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 24
+    },
+    "Gradient boosting": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.05,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 7,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    }
+  },
+  "split": {
+    "train": {
+      "n": 11745,
+      "origin_start": "2016-01-12 17:00:00",
+      "origin_end": "2016-04-03 06:20:00",
+      "target_start": "2016-01-12 17:10:00",
+      "target_end": "2016-04-03 07:20:00"
+    },
+    "validation": {
+      "n": 3911,
+      "origin_start": "2016-04-03 07:30:00",
+      "origin_end": "2016-04-30 11:10:00",
+      "target_start": "2016-04-03 07:40:00",
+      "target_end": "2016-04-30 12:10:00"
+    },
+    "test": {
+      "n": 3917,
+      "origin_start": "2016-04-30 12:20:00",
+      "origin_end": "2016-05-27 17:00:00",
+      "target_start": "2016-04-30 12:30:00",
+      "target_end": "2016-05-27 18:00:00"
+    }
+  },
+  "selection_metric": "validation MAE, smallest wins; no test-based changes",
+  "selection_frozen_utc": "2026-11-17T05:45:45.626021+00:00"
+}

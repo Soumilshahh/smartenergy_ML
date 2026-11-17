@@ -1,0 +1,180 @@
+[
+  {
+    "model": "Ridge",
+    "params": {
+      "ridge__alpha": 1
+    },
+    "cv_mae": 275.73909075290925,
+    "fold_mae": [
+      390.0395030824058,
+      227.75269011055863,
+      209.4250790657633
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 0.3396395000163466
+  },
+  {
+    "model": "Ridge",
+    "params": {
+      "ridge__alpha": 100
+    },
+    "cv_mae": 232.35234463692484,
+    "fold_mae": [
+      277.8465477161175,
+      213.92365548510048,
+      205.28683070955648
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 0.3396430000429973
+  },
+  {
+    "model": "Ridge",
+    "params": {
+      "ridge__alpha": 10000
+    },
+    "cv_mae": 224.57430606528874,
+    "fold_mae": [
+      250.78890414232328,
+      226.75104999513295,
+      196.18296405840996
+    ],
+    "selected_within_method": true,
+    "method_search_seconds": 0.33964479999849573
+  },
+  {
+    "model": "Random forest",
+    "params": {
+      "randomforestregressor__max_depth": 10,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 8
+    },
+    "cv_mae": 237.56030863544404,
+    "fold_mae": [
+      332.71559410556506,
+      196.52445777191335,
+      183.4408740288537
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 60.5024129000376
+  },
+  {
+    "model": "Random forest",
+    "params": {
+      "randomforestregressor__max_depth": 10,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 24
+    },
+    "cv_mae": 223.05940037627838,
+    "fold_mae": [
+      300.7424103433619,
+      193.91149868284197,
+      174.52429210263125
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 60.502415399998426
+  },
+  {
+    "model": "Random forest",
+    "params": {
+      "randomforestregressor__max_depth": null,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 8
+    },
+    "cv_mae": 242.03286023024373,
+    "fold_mae": [
+      339.97613149884654,
+      197.34326589646705,
+      188.7791832954176
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 60.50241820001975
+  },
+  {
+    "model": "Random forest",
+    "params": {
+      "randomforestregressor__max_depth": null,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 24
+    },
+    "cv_mae": 222.757431311148,
+    "fold_mae": [
+      297.62232226825876,
+      194.29864009721507,
+      176.35133156797013
+    ],
+    "selected_within_method": true,
+    "method_search_seconds": 60.502420100034215
+  },
+  {
+    "model": "Gradient boosting",
+    "params": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.05,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 7,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    },
+    "cv_mae": 229.84646211448572,
+    "fold_mae": [
+      318.7744873151225,
+      195.57248026035896,
+      175.19241876797577
+    ],
+    "selected_within_method": true,
+    "method_search_seconds": 3.0279774999944493
+  },
+  {
+    "model": "Gradient boosting",
+    "params": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.05,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 15,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    },
+    "cv_mae": 237.49508549006586,
+    "fold_mae": [
+      340.97796431045737,
+      196.04729474360937,
+      175.45999741613082
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 3.027980199956801
+  },
+  {
+    "model": "Gradient boosting",
+    "params": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.1,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 7,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    },
+    "cv_mae": 244.18142273451483,
+    "fold_mae": [
+      353.60887389481553,
+      192.7801313584922,
+      186.15526295023676
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 3.0279816999682225
+  },
+  {
+    "model": "Gradient boosting",
+    "params": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.1,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 15,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    },
+    "cv_mae": 258.80138452872137,
+    "fold_mae": [
+      382.8968297838817,
+      205.06177626044456,
+      188.44554754183795
+    ],
+    "selected_within_method": false,
+    "method_search_seconds": 3.0279827999765985
+  }
+]

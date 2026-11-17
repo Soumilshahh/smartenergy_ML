@@ -1,0 +1,141 @@
+{
+  "selected_model": "Gradient boosting",
+  "selected_ml": "Gradient boosting",
+  "feature_protocol": "All history + time + household sensors (predeclared primary)",
+  "best_parameters": {
+    "Ridge": {
+      "ridge__alpha": 10000
+    },
+    "Random forest": {
+      "randomforestregressor__max_depth": null,
+      "randomforestregressor__max_features": 0.7,
+      "randomforestregressor__min_samples_leaf": 24
+    },
+    "Gradient boosting": {
+      "histgradientboostingregressor__l2_regularization": 10,
+      "histgradientboostingregressor__learning_rate": 0.05,
+      "histgradientboostingregressor__max_iter": 160,
+      "histgradientboostingregressor__max_leaf_nodes": 7,
+      "histgradientboostingregressor__min_samples_leaf": 30
+    }
+  },
+  "split": {
+    "train": {
+      "n": 11745,
+      "origin_start": "2016-01-12 17:00:00",
+      "origin_end": "2016-04-03 06:20:00",
+      "target_start": "2016-01-12 17:10:00",
+      "target_end": "2016-04-03 07:20:00"
+    },
+    "validation": {
+      "n": 3911,
+      "origin_start": "2016-04-03 07:30:00",
+      "origin_end": "2016-04-30 11:10:00",
+      "target_start": "2016-04-03 07:40:00",
+      "target_end": "2016-04-30 12:10:00"
+    },
+    "test": {
+      "n": 3917,
+      "origin_start": "2016-04-30 12:20:00",
+      "origin_end": "2016-05-27 17:00:00",
+      "target_start": "2016-04-30 12:30:00",
+      "target_end": "2016-05-27 18:00:00"
+    }
+  },
+  "selection_metric": "validation MAE, smallest wins; no test-based changes",
+  "selection_frozen_utc": "2026-11-17T05:45:45.626021+00:00",
+  "dataset": {
+    "name": "UCI Appliances Energy Prediction",
+    "url": "https://archive.ics.uci.edu/dataset/374/appliances-energy-prediction",
+    "doi": "10.24432/C5VC8G",
+    "license": "CC BY 4.0",
+    "sha256": "2820bf712ad0275cb18b85a05250926100d8e65ebb9f4d2d016ca91ea152a25d",
+    "provenance": {
+      "url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip",
+      "doi": "10.24432/C5VC8G",
+      "license": "CC BY 4.0",
+      "retrieved_utc": "2026-11-17T05:44:27.883009+00:00",
+      "method": "urllib HTTPS official UCI ZIP; extract named CSV",
+      "sha256": "2820bf712ad0275cb18b85a05250926100d8e65ebb9f4d2d016ca91ea152a25d"
+    }
+  },
+  "seed": 335,
+  "executed_utc": "2026-11-17T05:45:58.299405+00:00",
+  "elapsed_seconds": 80.07822749996558,
+  "versions": {
+    "python": "3.12.4",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "sklearn": "1.6.1",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.0"
+  },
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpu_only": true,
+    "forest_threads": 2
+  },
+  "cv": {
+    "folds": [
+      {
+        "train_last_origin": "2016-02-02 01:20:00",
+        "train_target_end": "2016-02-02 02:20:00",
+        "validation_first_origin": "2016-02-02 02:30:00",
+        "n_train": 2931,
+        "n_validation": 2936
+      },
+      {
+        "train_last_origin": "2016-02-22 10:40:00",
+        "train_target_end": "2016-02-22 11:40:00",
+        "validation_first_origin": "2016-02-22 11:50:00",
+        "n_train": 5867,
+        "n_validation": 2936
+      },
+      {
+        "train_last_origin": "2016-03-13 20:00:00",
+        "train_target_end": "2016-03-13 21:00:00",
+        "validation_first_origin": "2016-03-13 21:10:00",
+        "n_train": 8803,
+        "n_validation": 2936
+      }
+    ],
+    "gap_origins": 6,
+    "n_splits": 3
+  },
+  "refit_samples": 15662,
+  "refit_last_origin": "2016-04-30 11:10:00",
+  "target_definition": "sum Appliances(t+1) through Appliances(t+6), Wh; row t observed at interval end",
+  "time_zone": "Naive dataset clock: source does not supply UTC offsets. Do not convert to visitor timezone.",
+  "excluded": [
+    "rv1",
+    "rv2",
+    "lights",
+    "T_out",
+    "Press_mm_hg",
+    "RH_out",
+    "Windspeed",
+    "Visibility",
+    "Tdewpoint"
+  ],
+  "sensor_assumption": "Household ten-minute sensor averages are assumed available at end of interval t. Airport interpolated weather excluded because it may use future hourly endpoints.",
+  "bootstrap": {
+    "improvement_pct": -0.6617879967170402,
+    "ci95_pct": [
+      -12.501723116645547,
+      8.271737300755989
+    ],
+    "days": 28,
+    "repetitions": 2000,
+    "seed": 335,
+    "caveat": "Day blocks preserve within-day dependence; dependence across days and one-household sampling remain. Partial boundary days retained."
+  },
+  "thresholds_train_only": {
+    "low": 280.0,
+    "high": 1260.0,
+    "sudden_change": 770.0
+  },
+  "eligible_origins": 19585,
+  "purged_origins": 12,
+  "integrity": "Model and hyperparameters frozen in selection_frozen.json before the single final-test scoring stage. All frozen candidates refitted and reported for transparency."
+}

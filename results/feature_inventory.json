@@ -1,0 +1,497 @@
+[
+  {
+    "name": "energy_lag_0",
+    "group": "history",
+    "definition": "Appliances[t-0]",
+    "source": "Appliances",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_1",
+    "group": "history",
+    "definition": "Appliances[t-1]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -10,
+    "latest_offset_minutes": -10,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_2",
+    "group": "history",
+    "definition": "Appliances[t-2]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -20,
+    "latest_offset_minutes": -20,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_3",
+    "group": "history",
+    "definition": "Appliances[t-3]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -30,
+    "latest_offset_minutes": -30,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_6",
+    "group": "history",
+    "definition": "Appliances[t-6]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -60,
+    "latest_offset_minutes": -60,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_12",
+    "group": "history",
+    "definition": "Appliances[t-12]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -120,
+    "latest_offset_minutes": -120,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_18",
+    "group": "history",
+    "definition": "Appliances[t-18]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -180,
+    "latest_offset_minutes": -180,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_36",
+    "group": "history",
+    "definition": "Appliances[t-36]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -360,
+    "latest_offset_minutes": -360,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_72",
+    "group": "history",
+    "definition": "Appliances[t-72]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -720,
+    "latest_offset_minutes": -720,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_lag_144",
+    "group": "history",
+    "definition": "Appliances[t-144]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1440,
+    "latest_offset_minutes": -1440,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_mean_6",
+    "group": "history",
+    "definition": "mean(Appliances[t-5:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -50,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_std_6",
+    "group": "history",
+    "definition": "std(Appliances[t-5:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -50,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_min_6",
+    "group": "history",
+    "definition": "min(Appliances[t-5:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -50,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_max_6",
+    "group": "history",
+    "definition": "max(Appliances[t-5:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -50,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_sum_6",
+    "group": "history",
+    "definition": "sum(Appliances[t-5:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -50,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_mean_18",
+    "group": "history",
+    "definition": "mean(Appliances[t-17:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -170,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_std_18",
+    "group": "history",
+    "definition": "std(Appliances[t-17:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -170,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_min_18",
+    "group": "history",
+    "definition": "min(Appliances[t-17:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -170,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_max_18",
+    "group": "history",
+    "definition": "max(Appliances[t-17:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -170,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_sum_18",
+    "group": "history",
+    "definition": "sum(Appliances[t-17:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -170,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_mean_36",
+    "group": "history",
+    "definition": "mean(Appliances[t-35:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -350,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_std_36",
+    "group": "history",
+    "definition": "std(Appliances[t-35:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -350,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_min_36",
+    "group": "history",
+    "definition": "min(Appliances[t-35:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -350,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_max_36",
+    "group": "history",
+    "definition": "max(Appliances[t-35:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -350,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_sum_36",
+    "group": "history",
+    "definition": "sum(Appliances[t-35:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -350,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_mean_144",
+    "group": "history",
+    "definition": "mean(Appliances[t-143:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_std_144",
+    "group": "history",
+    "definition": "std(Appliances[t-143:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_min_144",
+    "group": "history",
+    "definition": "min(Appliances[t-143:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_max_144",
+    "group": "history",
+    "definition": "max(Appliances[t-143:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "energy_sum_144",
+    "group": "history",
+    "definition": "sum(Appliances[t-143:t]) inclusive, std ddof=1",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "recent_trend",
+    "group": "history",
+    "definition": "Appliances[t]-Appliances[t-6]",
+    "source": "Appliances",
+    "earliest_offset_minutes": -60,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "short_long_difference",
+    "group": "history",
+    "definition": "trailing mean 1h - trailing mean 24h, both inclusive",
+    "source": "Appliances",
+    "earliest_offset_minutes": -1430,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "hour_sin",
+    "group": "time",
+    "definition": "sin(2*pi*hour/24)",
+    "source": "origin calendar",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "hour_cos",
+    "group": "time",
+    "definition": "cos(2*pi*hour/24)",
+    "source": "origin calendar",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "day_sin",
+    "group": "time",
+    "definition": "sin(2*pi*weekday/7)",
+    "source": "origin calendar",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "day_cos",
+    "group": "time",
+    "definition": "cos(2*pi*weekday/7)",
+    "source": "origin calendar",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "weekend",
+    "group": "time",
+    "definition": "weekday >= 5",
+    "source": "origin calendar",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T1",
+    "group": "environment",
+    "definition": "T1[t], household sensor average",
+    "source": "household T1",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T2",
+    "group": "environment",
+    "definition": "T2[t], household sensor average",
+    "source": "household T2",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T3",
+    "group": "environment",
+    "definition": "T3[t], household sensor average",
+    "source": "household T3",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T4",
+    "group": "environment",
+    "definition": "T4[t], household sensor average",
+    "source": "household T4",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T5",
+    "group": "environment",
+    "definition": "T5[t], household sensor average",
+    "source": "household T5",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T6",
+    "group": "environment",
+    "definition": "T6[t], household sensor average",
+    "source": "household T6",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T7",
+    "group": "environment",
+    "definition": "T7[t], household sensor average",
+    "source": "household T7",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T8",
+    "group": "environment",
+    "definition": "T8[t], household sensor average",
+    "source": "household T8",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "T9",
+    "group": "environment",
+    "definition": "T9[t], household sensor average",
+    "source": "household T9",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_1",
+    "group": "environment",
+    "definition": "RH_1[t], household sensor average",
+    "source": "household RH_1",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_2",
+    "group": "environment",
+    "definition": "RH_2[t], household sensor average",
+    "source": "household RH_2",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_3",
+    "group": "environment",
+    "definition": "RH_3[t], household sensor average",
+    "source": "household RH_3",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_4",
+    "group": "environment",
+    "definition": "RH_4[t], household sensor average",
+    "source": "household RH_4",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_5",
+    "group": "environment",
+    "definition": "RH_5[t], household sensor average",
+    "source": "household RH_5",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_6",
+    "group": "environment",
+    "definition": "RH_6[t], household sensor average",
+    "source": "household RH_6",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_7",
+    "group": "environment",
+    "definition": "RH_7[t], household sensor average",
+    "source": "household RH_7",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_8",
+    "group": "environment",
+    "definition": "RH_8[t], household sensor average",
+    "source": "household RH_8",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  },
+  {
+    "name": "RH_9",
+    "group": "environment",
+    "definition": "RH_9[t], household sensor average",
+    "source": "household RH_9",
+    "earliest_offset_minutes": 0,
+    "latest_offset_minutes": 0,
+    "available_at_origin": true
+  }
+]

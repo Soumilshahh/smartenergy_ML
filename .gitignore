@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/
+website/node_modules/
+website/dist/
+.agents/
+docs/sources/*.html
+*.joblib
+tmp/
+.env*
+!.env.example
