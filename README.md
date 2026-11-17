@@ -4,7 +4,7 @@
 
 Soumil Shah (24110354) · ES 335 Machine Learning · Individual project
 
-[Interactive website](https://soumilshahh.github.io/smartenergy-ml/) · [Source repository](https://github.com/Soumilshahh/smartenergy-ml)
+[Interactive website](https://soumilshahh.github.io/smartenergy_ML/) · [Source repository](https://github.com/Soumilshahh/smartenergy_ML)
 
 ## Research question
 
